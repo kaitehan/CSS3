@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background-color: pink;
+            /* margin: 100px auto; */
+        }
+
+        div:hover {
+            /* 1.里面的参数没有单位，表示的是放大或者缩小到原宽度、高度的倍数 */
+            /* transform: scale(2,2); */
+            /* 2.等比例缩放  同时修改宽度和高度  我们有简单的写法 */
+            transform: scale(1.1);
+        }
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <section><div>sdfasdf</div></section>
+    
+    <p></p>
+</body>
+</html>

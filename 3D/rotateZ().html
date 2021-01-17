@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            margin: 100px auto;
+            background-color: pink;
+            transition: all 1s;
+        }
+        div:hover {
+            /* 当度数为正时  元素顺时针旋转  反之则逆时针旋转 */
+            transform: rotateZ(45deg);
+            /* transform: rotate3d(0,0,1,45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div>8</div>
+</body>
+</html>

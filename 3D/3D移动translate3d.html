@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* 透视就是视距，视距就是一个距离人眼镜到屏幕的距离 */
+            /* 透视写到被观察元素的父盒子里面 */
+            perspective: 500px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* transform: translateX(100px) translateY(100px) translateZ(100px); */
+             /* translateZ（） 沿着z轴移动 */
+            /* translateZ（） 后面的单位一般都是px */
+            /* translateZ（100px） 向外移动100px */
+
+            /* 等价于transform: translate3d(x,y,z); */
+            transform: translate3d(1000px,100px,100px);
+            /* 里面xyz三个参数是不能省略的，如果没有写0 */
+           
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
